@@ -34,6 +34,7 @@ class AllSongs extends StatefulWidget {
 class _AllSongsState extends State<AllSongs> {
   final _audioQuery = OnAudioQuery();
   final AudioPlayer _audioPlayer = AudioPlayer();
+  List<SongModel> allSongs=[];
 
   playSong(String? uri) {
     try {
